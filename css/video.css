@@ -4,8 +4,13 @@ body {
   margin: 0;
   color: #E5DADA;
   overflow-x: hidden;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
   background-color: black;
+  background-image: linear-gradient(0deg, black 0%, black 0%, rgba(0, 0, 0, 0.8) 100%), url('../img/doctorstrange.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: none;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -13,7 +18,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: black;
+  background: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -29,8 +34,20 @@ body::-webkit-scrollbar-thumb:hover {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, p {
-  cursor: default;
+nav img{
+    width: 167px;
+    height: 45px;
+    vertical-align: middle;
+}
+
+nav a.logo{
+    display: inline-block;
+    line-height: 90px;
+    margin-left: 3%;
+}
+
+header nav{ 
+    height: 90px;
 }
 
 .video-page {
@@ -44,21 +61,7 @@ h1, h2, h3, h4, h5, p {
   width: 100%;
   min-height: 600px;
   position: relative;
-  background: linear-gradient(0deg, black 0%, black 0%, rgba(0, 0, 0, 0.7) 100%);
   display: flex;
-}
-
-.video-page .video-page-header:before {
-  content: "";
-  background: url('../img/placeholder.png');
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  height: 98%;
-  filter: blur(8px);
-  width: 100%;
-  z-index: -1;
 }
 
 .video-page .video-page-header .video-description {
@@ -147,21 +150,22 @@ h1, h2, h3, h4, h5, p {
 }
 
 .video-page .video-page-header .video-description .header-right .rating {
-  width: 40px;
+  width: 75px;
+  text-align: center;
   border-radius: 0.25rem;
   margin-bottom: 20px;
   padding: 5px 10px;
-  background-color: rgba(132, 0, 50, 0.8);
+  background-color: rgba(0, 132, 50, 0.8);
 }
 
 .video-page .streaming-container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 60%;
   margin: 0 auto 40px auto;
   position: relative;
 }
 
-.video-page .streaming-container img {
+.video-page .streaming-container video {
   width: 100%;
 }
 
@@ -194,91 +198,3 @@ h1, h2, h3, h4, h5, p {
 
 .video-page .streaming-container .streaming-play i:hover {
   color: #E5DADA;
-}
-
-.video-page .comments-container {
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  border-top: 2px solid #454545;
-}
-
-.video-page .comments-container h1 {
-  font-size: 25px;
-  margin-bottom: 30px;
-  color: #454545;
-  font-weight: normal;
-}
-
-.video-page .comments-container .profile-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 0.25rem;
-  object-fit: cover;
-}
-
-.video-page .comments-container .one-comment {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.video-page .comments-container .one-comment .comment-content {
-  margin-left: 10px;
-  padding-top: 5px;
-}
-
-.video-page .comments-container .one-comment .comment-content h4 {
-  margin: 0;
-}
-
-.video-page .comments-container .one-comment .comment-content h4 span {
-  color: #454545;
-  margin-left: 10px;
-}
-
-.video-page .comments-container .one-comment .comment-content p {
-  margin: 0;
-  margin-top: 10px;
-  color: #888888;
-}
-
-.video-page .comments-container .add-comment {
-  display: flex;
-}
-
-.video-page .comments-container .add-comment .submit-comment {
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.video-page .comments-container .add-comment .submit-comment input {
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid #454545;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 15px;
-  color: #E5DADA;
-  padding: 5px 0;
-  transition: all .5s;
-}
-
-.video-page .comments-container .add-comment .submit-comment input:focus {
-  border-bottom: 1px solid #E5DADA;
-  outline: none;
-}
-
-.video-page .comments-container .add-comment .submit-comment .submit {
-  font-size: 15px;
-  padding: 5px 10px;
-  border-radius: 0.25rem;
-  align-self: flex-end;
-  cursor: pointer;
-  color: #888888;
-  transition: all .5s;
-}
-
-.video-page .comments-container .add-comment .submit-comment .submit:hover {
-    color: #E59500;
-}

@@ -18,6 +18,14 @@ header{
     height: 100vh;
 }
 
+bobs{
+    background-image: linear-gradient(0deg, black 0%, black 0%, rgba(0, 0, 0, 0.8) 100%), url('../img/Default Banner.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: none;
+    height: 100vh;
+}
+
 nav img{
     width: 167px;
     height: 45px;
@@ -66,6 +74,24 @@ nav .signin{
     margin: 0 0 .5em;
 }
 
+.titlecard {
+    margin: 0 3%;
+    position: absolute;
+    top: 35%;
+    font-size: 1.3vw;
+    width: 40%;
+}
+
+.titlecard_title{
+    font-size: 2em;
+    margin: 0 0 0.2em;
+    font-weight: 700;
+}
+
+.titlecard_subtitle{
+    margin: 0 0 .5em;
+}
+
 .btn{
     font-size: 14px;
     letter-spacing: 1.9px;
@@ -84,7 +110,29 @@ nav .signin{
     border: 0;
 }
 
+.watch {
+    font-size: 14px;
+    letter-spacing: 1.9px;
+    font-weight: 400;
+    margin: .5em .5em .5em 0;
+    padding: 12px 2em;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: middle; 
+    user-select: none;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
 nav .signin:hover, .btn:hover{
+    background: #fff;
+    color: #e50914;
+}
+
+nav .signin:hover, .watch:hover{
     background: #fff;
     color: #e50914;
 }
@@ -197,6 +245,7 @@ nav .signin:hover, .btn:hover{
   padding: 20px;
   border: 1px solid #ddd;
   width: 25%; /* Could be more or less, depending on screen size */
+  border-radius: 20px;
 }
 
 /* The Close Button */
