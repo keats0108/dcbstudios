@@ -43,6 +43,31 @@ nav {
     width: 100%;
     height: 75px;
     position: fixed;
+    padding-right: 3vw;
+}
+
+nav form {
+    float: right;
+    align-items: center;
+    display: flex;
+}
+
+nav input[type=text] {
+    border: none;
+    border-bottom: 10px, #e50914;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    width: 10vw;
+}
+
+nav button {
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    background-color: #e50914;
+    color: white;
+    border: none;
 }
 
 nav img{
@@ -303,12 +328,17 @@ main {
 
 .item {
     padding: 2px;
-    background: green;
+    background-color: #404040;
     flex: 0 0 15%;
     text-align: center;
     margin: 0 2px;
     transition: transform 300ms ease 100ms;
     height: 100px;
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
 }
 
 .container:hover .item {
@@ -317,8 +347,6 @@ main {
 
 .item:hover {
     transform: scale(1.5) !important;
-    background-color: white;
-    color: black;
 }
 
 .item:hover ~ .item {
