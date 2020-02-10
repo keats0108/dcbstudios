@@ -239,3 +239,9 @@ header nav{
 
 .video-page .streaming-container .streaming-play i:hover {
   color: #E5DADA;
+}
+
+.videoplayer {
+    z-index: 100;
+    transform: translateX(17%)
+    }
