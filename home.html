@@ -36,11 +36,11 @@
             <br>
             <h1>Suggested</h1>
                 <div class="container">
-                    <div class="item">
-                        <a href="video.html">
-                            <p>Sample Title Here</p>    
-                        </a>
-                    </div>
+                    <button class="item" onclick="openMe()">
+                        <p>Sample Title Here</p>
+                        <img src="img/background.png">
+                    </button>
+                    
                     <div class="item">
                         <a href="video.html">
                             <p>Sample Title Here</p>    
@@ -89,6 +89,13 @@
                 </div>    
             <br>
             <br>
+            
+            <div id="opened1">
+                <h2>Dulwich Tech Expo 2018</h2>
+                <h4>4m 11s</h4>
+                <p>Dulwich College Beijing hosts the first Dulwich Tech Expo for KS3 Students! Students across all Dulwich schools worked together to make a bug-based food product to convince markets that they are a sustainable food source.</p>
+                <button onclick="window.location.href = 'https://web.microsoftstream.com/embed/video/788b7dc0-ca18-46b8-a26a-ebaab2cc0fea?autoplay=false&showinfo=true';"><i class="fas fa-play"></i> Watch Now</button>
+            </div>
 
             <h1>Chinese Short Film</h1>
                 <div class="container">
@@ -207,5 +214,16 @@
         <!--JavaScript-->
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/carosel.js"></script>
+        
+        <script>
+        function openMe(){
+            var x = document.getElementById("opened1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        </script>
     </body>
 </html>
