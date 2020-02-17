@@ -351,8 +351,7 @@ main {
 
 .item img{
     height: 100px;
-    width: 100%;
-    transform: translateY(-50px);    
+    width: 100%;    
 }
 
 .container:hover .item {
@@ -419,4 +418,9 @@ main {
     border-radius: 5px;
     border-color: #e50914;
     height: 30px;
+}
+
+#opened1 img{
+    height: inherit;
+    width: 100%;
 }
