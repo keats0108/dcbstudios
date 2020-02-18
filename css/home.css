@@ -37,6 +37,11 @@ header{
     height: 75vh;
 }
 
+#captione {
+    color: black;
+    z-index: -999;
+}
+
 nav {
     background-color: black;
     z-index: 9999;
