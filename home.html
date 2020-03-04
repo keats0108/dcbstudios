@@ -14,12 +14,25 @@
         
         <nav>
             <a class="logo" href="#"><img src="img/placeholderlogo.png"></a>
+            
             <div class="search-container">
                 <form>
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
+            
+            <div class="dropdown"> 
+                <div class="dropbtn">Dropdown 
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            
         </nav>
         
         <header>
@@ -115,11 +128,12 @@
 
             <h1>Chinese Short Film</h1>
                 <div class="container">
-                    <div class="item">
-                        <a href="video.html">
-                            <p>Sample Title Here</p>    
-                        </a>
-                    </div>
+                    
+                    <button class="item" onclick="open4()">
+                        <img src="img/2.png">
+                        <p>学校的守护者<br>(Guardian of the School)</p>
+                    </button>
+                    
                     <div class="item">
                         <a href="video.html">
                             <p>Sample Title Here</p>    
@@ -169,6 +183,14 @@
             <br>
             <br>
 
+            <div id="opened4" class="content">
+                <button onclick="close()" class="clos"><i class="far fa-window-close"></i></button>
+                <h1>学校的守护者 (Guardian of the School)</h1>
+                <p>3m 21s<p>
+                <p>Andrew goes on an adventure to exterminate the plague before it terrorises the school...</p>
+                <button onclick="window.location.href = 'https://web.microsoftstream.com/embed/video/c24ebede-5ad4-4b5c-9f6f-a19245ebbe05?autoplay=false&amp;showinfo=true';"><i class="fas fa-play"></i> Watch Now</button>
+            </div>
+            
             <h1>School Events</h1>
                 <div class="container">
                     <div class="item">
